@@ -13,7 +13,3 @@ ja_jp_install_packages:
 - lv
 - nkf
 - w3m
-- curl
-- vim
-ja_jp_purge_packages:
-- nano
