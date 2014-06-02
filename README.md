@@ -34,3 +34,7 @@ None.
 ## License
 
 MIT License
+
+## TODO
+
+- Support Debian
