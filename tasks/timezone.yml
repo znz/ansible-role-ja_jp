@@ -1,0 +1,5 @@
+---
+- template: src=timezone.j2 dest=/etc/timezone owner=root group=root mode=0644
+  register: ja_jp_etc_timezone
+- command: dpkg-reconfigure -f noninteractive tzdata
+  when: ja_jp_etc_timezone|changed

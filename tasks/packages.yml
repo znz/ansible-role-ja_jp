@@ -1,0 +1,3 @@
+---
+- apt: name={{ ja_jp_install_packages | join(",") }}
+- apt: name={{ ja_jp_purge_packages | join(",") }} purge=yes state=absent
