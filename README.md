@@ -1,10 +1,9 @@
 # ja_jp
 
-- Set jp mirror ( ftp.jaist.ac.jp ) in `/etc/apt/sources.list`
-- Set ja locale as default
-- Set Asia/Tokyo timezone
+- Set jp mirror in `/etc/apt/sources.list`
+- Set `ja` locale as default
+- Set `Asia/Tokyo` timezone
 - Install some packages
-- And purge `nano`
 
 ## Requirements
 
