@@ -8,7 +8,7 @@ ja_jp_apt_debian_components:
 - non-free
 - contrib
 
-ja_jp_apt_ubuntu_uri: "http://www.ftp.ne.jp/Linux/packages/ubuntu/archive/"
+ja_jp_apt_ubuntu_uri: "http://ubuntutym.u-toyama.ac.jp/ubuntu/"
 ja_jp_apt_ubuntu_components:
 - main
 - restricted
