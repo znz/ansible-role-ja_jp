@@ -1,4 +1,4 @@
-# `ja_jp`
+# Ansible role for `ja_jp`
 
 - Set jp mirror in `/etc/apt/sources.list`
 - Set `ja` locale as default
