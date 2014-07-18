@@ -28,7 +28,7 @@ None.
     ---
     - hosts: all
       sudo: yes
-	  roles:
+      roles:
       - znzj.ja_jp
 
 ## License
