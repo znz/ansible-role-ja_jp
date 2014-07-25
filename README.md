@@ -34,6 +34,11 @@
 - `ansible_distribution`: should be `Debian` or `Ubuntu`
 - `ansible_distribution_release`: used in `sources.list`
 
+## Additional apt-lines
+
+- `ja_jp_enable_backports`: see http://backports.debian.org/ or https://help.ubuntu.com/community/UbuntuBackports
+- `ja_jp_enable_debian_lts`: see https://wiki.debian.org/LTS/Using
+
 ## Dependencies
 
 None.

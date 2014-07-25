@@ -20,3 +20,6 @@ ja_jp_install_packages:
 - lv
 - nkf
 - w3m
+
+ja_jp_enable_backports: no
+ja_jp_enable_debian_lts: no

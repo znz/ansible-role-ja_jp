@@ -8,8 +8,12 @@ deb-src {{ ja_jp_apt_debian_security_uri }} {{ ansible_distribution_release }}/u
 deb {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-updates {{ ja_jp_apt_debian_components | join(" ") }}
 deb-src {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-updates {{ ja_jp_apt_debian_components | join(" ") }}
 
-#deb {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-backports {{ ja_jp_apt_debian_components | join(" ") }}
-#deb-src {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-backports {{ ja_jp_apt_debian_components | join(" ") }}
+{% if ja_jp_enable_backports %}
+deb {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-backports {{ ja_jp_apt_debian_components | join(" ") }}
+deb-src {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-backports {{ ja_jp_apt_debian_components | join(" ") }}
+{% endif %}
 
+{% if ja_jp_enable_debian_lts %}
 #deb {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-lts {{ ja_jp_apt_debian_components | join(" ") }}
 #deb-src {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-lts {{ ja_jp_apt_debian_components | join(" ") }}
+{% endif %}
