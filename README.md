@@ -45,11 +45,21 @@ None.
 
 ## Example Playbook
 
+Normal usage:
+
     ---
     - hosts: all
       sudo: yes
       roles:
       - znzj.ja_jp
+
+With backports:
+
+    ---
+    - hosts: all
+      sudo: yes
+      roles:
+    - { role: znzj.ja_jp, ja_jp_enable_backports: yes }
 
 ## License
 
