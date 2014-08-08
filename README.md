@@ -59,7 +59,7 @@ With backports:
     - hosts: all
       sudo: yes
       roles:
-    - { role: znzj.ja_jp, ja_jp_enable_backports: yes }
+      - { role: znzj.ja_jp, ja_jp_enable_backports: yes }
 
 ## License
 
