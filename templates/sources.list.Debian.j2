@@ -14,6 +14,6 @@ deb-src {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-backports 
 {% endif %}
 
 {% if ja_jp_enable_debian_lts %}
-#deb {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-lts {{ ja_jp_apt_debian_components | join(" ") }}
-#deb-src {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-lts {{ ja_jp_apt_debian_components | join(" ") }}
+deb {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-lts {{ ja_jp_apt_debian_components | join(" ") }}
+deb-src {{ ja_jp_apt_debian_uri }} {{ ansible_distribution_release }}-lts {{ ja_jp_apt_debian_components | join(" ") }}
 {% endif %}

@@ -1,0 +1,5 @@
+---
+- hosts: all
+  sudo: yes
+  roles:
+  - { role: znzj.ja_jp, ja_jp_enable_debian_lts: yes }
