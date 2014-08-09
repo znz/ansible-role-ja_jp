@@ -1,7 +1,7 @@
 ---
 # tasks file for ansible-role-ja_jp
 
-- include: apt.yml tags=ja_jp_apt
-- include: locale.yml tags=ja_jp_locale
-- include: timezone.yml tags=ja_jp_timezone
-- include: packages.yml tags=ja_jp_packages
+- include: apt.yml tags=ja_jp,ja_jp_apt
+- include: locale.yml tags=ja_jp,ja_jp_locale
+- include: timezone.yml tags=ja_jp,ja_jp_timezone
+- include: packages.yml tags=ja_jp,ja_jp_packages
