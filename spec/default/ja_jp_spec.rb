@@ -6,11 +6,11 @@ describe file('/etc/apt/sources.list') do
 end
 
 describe command('locale -a') do
-  it { should return_stdout /^ja_JP\.utf8$/ }
+  its(:stdout) { should match(/^ja_JP\.utf8$/) }
 end
 
 describe command('date +%Z') do
-  it { should return_stdout 'JST' }
+  its(:stdout) { should eq "JST\n" }
 end
 
 describe package('lv') do
