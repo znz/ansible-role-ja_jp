@@ -1,7 +1,0 @@
----
-- name: update locale.gen
-  lineinfile: dest=/etc/locale.gen regexp='ja_JP\.UTF-8' line='ja_JP.UTF-8 UTF-8'
-  register: ja_jp_locale_gen
-- name: dpkg-reconfigure locales
-  command: env DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
-  when: ja_jp_locale_gen|changed

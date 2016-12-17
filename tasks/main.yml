@@ -2,8 +2,6 @@
 # tasks file for ansible-role-ja_jp
 
 - include: apt.yml tags=ja_jp,ja_jp_apt
-- include: locale-debian.yml tags=ja_jp,ja_jp_locale
-  when: ansible_distribution == "Debian"
 - include: locale-ubuntu.yml tags=ja_jp,ja_jp_locale
   when: ansible_distribution == "Ubuntu"
 - include: locale.yml tags=ja_jp,ja_jp_locale
