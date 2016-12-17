@@ -1,3 +1,4 @@
 ---
 - name: "set timezone to {{ ja_jp_timezone }}"
-  timezone: name="{{ ja_jp_timezone }}"
+  timezone:
+    name: "{{ ja_jp_timezone }}"

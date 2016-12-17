@@ -1,2 +1,4 @@
 ---
-- apt: name={{ ja_jp_install_packages | join(",") }}
+- name: "install Japanese related packages"
+  apt:
+    name: "{{ ja_jp_install_packages | join(',') }}"

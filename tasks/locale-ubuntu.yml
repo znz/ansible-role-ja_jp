@@ -1,2 +1,3 @@
 ---
-- apt: name=language-pack-ja
+- name: "install language-pack-ja"
+  apt: name=language-pack-ja

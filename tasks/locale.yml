@@ -1,2 +1,8 @@
 ---
-- template: src=default-locale.j2 dest=/etc/default/locale owner=root group=root mode=0644
+- name: "set LANG to /etc/default/locale"
+  template:
+    src: default-locale.j2
+    dest: /etc/default/locale
+    owner: root
+    group: root
+    mode: 0644
