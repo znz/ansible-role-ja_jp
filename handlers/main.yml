@@ -1,3 +1,0 @@
----
-- name: dpkg-reconfigure locales
-  command: env DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
