@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe file('/etc/apt/sources.list') do
   it { should be_file }
-  its(:content) { should match(%r!http://\S+\.jp\b!) }
+  its(:content) { should match(%r!http://.*\bjp\b!) }
 end
 
 describe command('locale -a') do
