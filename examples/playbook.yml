@@ -1,5 +1,5 @@
 ---
 - hosts: all
-  sudo: yes
+  become: yes
   roles:
   - { role: znzj.ja_jp, ja_jp_enable_backports: yes }
