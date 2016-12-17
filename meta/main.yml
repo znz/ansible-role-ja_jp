@@ -3,7 +3,7 @@ galaxy_info:
   author: Kazuhiro NISHIYAMA
   description: Setup ja_jp locale
   license: MIT
-  min_ansible_version: 1.2
+  min_ansible_version: 2.2
 
   platforms:
   - name: Ubuntu
